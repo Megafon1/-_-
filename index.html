@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOP OFFERS VIP</title>
+<title>TOP OFFERS | BEST CTR</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,105 +17,81 @@
 <!-- TOP BAR -->
 <header class="topbar">
 
-    <div class="logo">TOP OFFERS VIP</div>
+    <div class="logo">TOP OFFERS</div>
 
-    <div class="live">
-        <span class="dot"></span>
-        LIVE: <span id="online">312</span>
-    </div>
+    <a href="#offers" class="top-cta">СМОТРЕТЬ</a>
 
 </header>
 
-<!-- HERO -->
+<!-- HERO (CTR FOCUS) -->
 <section class="hero">
 
-    <div class="badge">🔥 BEST CONVERTING OFFERS</div>
+    <div class="badge">🔥 LIMITED OFFERS</div>
 
-    <h1>Проекты из ТОП-10 заносов</h1>
+    <h1>Лучшие проекты из видео</h1>
 
-    <p>
-        Подборка офферов из видео со стримерами.<br>
-        Обновляется ежедневно на основе новых нарезок.
-    </p>
+    <p>Выборка офферов с максимальными заносами стримеров</p>
 
-    <a href="#offers" class="cta pulse">Смотреть офферы</a>
+    <a href="#offers" class="cta-main">ПОЛУЧИТЬ ДОСТУП</a>
 
-</section>
-
-<!-- TRUST -->
-<section class="trust">
-
-    <div>✔ Проверено в видео</div>
-    <div>✔ Высокая активность</div>
-    <div>✔ Обновление 24/7</div>
+    <div class="micro">
+        ✔ обновляется ежедневно • ✔ проверено в видео • ✔ активные бонусы
+    </div>
 
 </section>
 
 <!-- OFFERS -->
 <section id="offers" class="offers">
 
-    <!-- HIGHLIGHT CARD -->
     <div class="card highlight">
 
-        <div class="tag">🔥 TOP PICK</div>
+        <div class="tag">TOP CTR</div>
 
         <div class="name">Gama Casino</div>
-        <div class="meta">Streamers: Zernavka</div>
 
         <div class="bonus">100% + 100 FS</div>
 
-        <a href="https://example.com" class="btn">Перейти</a>
+        <a href="https://example.com" class="btn">ПЕРЕЙТИ</a>
 
     </div>
 
     <div class="card">
         <div class="name">R7 Casino</div>
-        <div class="meta">Streamers: Bratishkinoff</div>
         <div class="bonus">200% + 100 FS</div>
-        <a href="https://example.com" class="btn">Перейти</a>
+        <a href="https://example.com" class="btn">ПЕРЕЙТИ</a>
     </div>
 
     <div class="card">
         <div class="name">1win</div>
-        <div class="meta">Streamers: Dosaia</div>
-        <div class="bonus">500% bonus</div>
-        <a href="https://example.com" class="btn">Перейти</a>
+        <div class="bonus">500% BONUS</div>
+        <a href="https://example.com" class="btn">ПЕРЕЙТИ</a>
     </div>
 
     <div class="card">
         <div class="name">Kent</div>
-        <div class="meta">Streamers: Maks</div>
         <div class="bonus">150% + FS</div>
-        <a href="https://example.com" class="btn">Перейти</a>
+        <a href="https://example.com" class="btn">ПЕРЕЙТИ</a>
     </div>
+
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof">
+
+    <div>🔥 1 200+ переходов сегодня</div>
+    <div>⚡ обновлено 5 минут назад</div>
+    <div>🎯 высокий CTR источник</div>
 
 </section>
 
 <!-- STICKY CTA -->
 <div class="sticky">
 
-    <a href="#offers" class="sticky-btn pulse">
-        🔥 Получить доступ к офферам
+    <a href="#offers" class="sticky-btn">
+        🔥 ЗАБРАТЬ ЛУЧШИЕ ОФФЕРЫ
     </a>
 
 </div>
-
-<footer>
-    © TOP OFFERS VIP 2026
-</footer>
-
-<!-- SIMPLE COUNTER SCRIPT -->
-<script>
-let el = document.getElementById("online");
-
-setInterval(() => {
-    let val = parseInt(el.textContent);
-    val += Math.floor(Math.random()*5 - 2);
-    if(val < 280) val = 280;
-    if(val > 420) val = 420;
-    el.textContent = val;
-}, 2500);
-</script>
 
 </body>
 </html>
