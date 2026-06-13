@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOP ZANOSI</title>
+<title>TOP OFFERS VIP</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,78 +14,108 @@
 <div class="bg"></div>
 <div class="overlay"></div>
 
-<header class="header">
+<!-- TOP BAR -->
+<header class="topbar">
 
-    <div class="logo">TOP ZANOSI</div>
+    <div class="logo">TOP OFFERS VIP</div>
 
-    <nav>
-        <a href="#projects">Проекты</a>
-        <a href="#info">О видео</a>
-    </nav>
+    <div class="live">
+        <span class="dot"></span>
+        LIVE: <span id="online">312</span>
+    </div>
 
 </header>
 
+<!-- HERO -->
 <section class="hero">
 
-    <div class="badge">ТОП-10 ЗАНОСОВ СО СТРИМОВ</div>
+    <div class="badge">🔥 BEST CONVERTING OFFERS</div>
 
-    <h1>Проекты из видео</h1>
+    <h1>Проекты из ТОП-10 заносов</h1>
 
     <p>
-        Подборка сайтов, которые появляются в моих нарезках.<br>
-        Здесь играют стримеры и получают крупные выигрыши.
+        Подборка офферов из видео со стримерами.<br>
+        Обновляется ежедневно на основе новых нарезок.
     </p>
 
-    <a href="#projects" class="btn">Смотреть список</a>
+    <a href="#offers" class="cta pulse">Смотреть офферы</a>
 
 </section>
 
-<section id="projects" class="grid">
+<!-- TRUST -->
+<section class="trust">
 
-    <div class="card">
-        <div class="top">Gama Casino</div>
-        <div class="desc">Стримеры: Zernavka, Slotviver</div>
+    <div>✔ Проверено в видео</div>
+    <div>✔ Высокая активность</div>
+    <div>✔ Обновление 24/7</div>
+
+</section>
+
+<!-- OFFERS -->
+<section id="offers" class="offers">
+
+    <!-- HIGHLIGHT CARD -->
+    <div class="card highlight">
+
+        <div class="tag">🔥 TOP PICK</div>
+
+        <div class="name">Gama Casino</div>
+        <div class="meta">Streamers: Zernavka</div>
+
         <div class="bonus">100% + 100 FS</div>
-        <a href="https://example.com" class="link">Перейти</a>
+
+        <a href="https://example.com" class="btn">Перейти</a>
+
     </div>
 
     <div class="card">
-        <div class="top">R7 Casino</div>
-        <div class="desc">Стримеры: Bratishkinoff</div>
+        <div class="name">R7 Casino</div>
+        <div class="meta">Streamers: Bratishkinoff</div>
         <div class="bonus">200% + 100 FS</div>
-        <a href="https://example.com" class="link">Перейти</a>
+        <a href="https://example.com" class="btn">Перейти</a>
     </div>
 
     <div class="card">
-        <div class="top">Kent Casino</div>
-        <div class="desc">Стримеры: Maks</div>
-        <div class="bonus">150% + 50 FS</div>
-        <a href="https://example.com" class="link">Перейти</a>
+        <div class="name">1win</div>
+        <div class="meta">Streamers: Dosaia</div>
+        <div class="bonus">500% bonus</div>
+        <a href="https://example.com" class="btn">Перейти</a>
     </div>
 
     <div class="card">
-        <div class="top">1win</div>
-        <div class="desc">Стримеры: Dosaia</div>
-        <div class="bonus">500% бонус</div>
-        <a href="https://example.com" class="link">Перейти</a>
+        <div class="name">Kent</div>
+        <div class="meta">Streamers: Maks</div>
+        <div class="bonus">150% + FS</div>
+        <a href="https://example.com" class="btn">Перейти</a>
     </div>
 
 </section>
 
-<section id="info" class="info">
+<!-- STICKY CTA -->
+<div class="sticky">
 
-    <h2>Как это работает</h2>
+    <a href="#offers" class="sticky-btn pulse">
+        🔥 Получить доступ к офферам
+    </a>
 
-    <p>
-        Я делаю нарезки «ТОП-10 заносов» со стримов.<br>
-        В видео показаны реальные игровые сессии и проекты.
-    </p>
-
-</section>
+</div>
 
 <footer>
-    © TOP ZANOSI 2026
+    © TOP OFFERS VIP 2026
 </footer>
+
+<!-- SIMPLE COUNTER SCRIPT -->
+<script>
+let el = document.getElementById("online");
+
+setInterval(() => {
+    let val = parseInt(el.textContent);
+    val += Math.floor(Math.random()*5 - 2);
+    if(val < 280) val = 280;
+    if(val > 420) val = 420;
+    el.textContent = val;
+}, 2500);
+</script>
 
 </body>
 </html>
