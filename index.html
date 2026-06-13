@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP MEDIA</title>
 
-<title>TOP MEDIA</title>
-
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,9 +15,9 @@
         TOP MEDIA
     </div>
 
-    <nav>
+    <nav class="menu">
         <a href="#videos">Видео</a>
-        <a href="#top">Топы</a>
+        <a href="#top">Рейтинг</a>
         <a href="#news">Новости</a>
     </nav>
 
@@ -28,37 +27,56 @@
 
     <div class="hero-content">
 
+        <span class="badge">
+            НОВЫЙ ВЫПУСК
+        </span>
+
         <h1>
             Лучшие видео и подборки
         </h1>
 
         <p>
-            Ежедневные обновления, рейтинги и эксклюзивный контент.
+            Каждый день новые ролики, рейтинги и эксклюзивный контент.
         </p>
 
-        <a href="#videos" class="btn">
-            Смотреть подборки
+        <a href="#videos" class="button">
+            Смотреть сейчас
         </a>
 
     </div>
 
 </section>
 
-<section id="videos" class="grid">
+<section id="videos" class="videos">
 
-    <div class="card">
-        <img src="thumb1.jpg" alt="">
-        <h3>ТОП 10 моментов недели</h3>
-    </div>
+    <h2>Популярные видео</h2>
 
-    <div class="card">
-        <img src="thumb2.jpg" alt="">
-        <h3>Лучшие стримы месяца</h3>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-        <img src="thumb3.jpg" alt="">
-        <h3>Главные события</h3>
+        <div class="card">
+            <img src="thumb1.jpg" alt="">
+            <div class="card-body">
+                <h3>ТОП 10 моментов недели</h3>
+                <p>Самые яркие события за последние 7 дней.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="thumb2.jpg" alt="">
+            <div class="card-body">
+                <h3>Лучшие стримы месяца</h3>
+                <p>Подборка самых интересных трансляций.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="thumb3.jpg" alt="">
+            <div class="card-body">
+                <h3>Главные новости</h3>
+                <p>Краткий обзор последних событий.</p>
+            </div>
+        </div>
+
     </div>
 
 </section>
@@ -82,12 +100,20 @@
 
 </section>
 
-<footer id="news">
+<section id="news" class="news">
 
     <h2>Новости проекта</h2>
 
     <p>
-        Следите за обновлениями и новыми выпусками.
+        Следите за обновлениями и выходом новых материалов.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 TOP MEDIA
     </p>
 
 </footer>
